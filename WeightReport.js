@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View, Image, TouchableHighlight, ImageBackground, Slider, Button, navigate, Alert } from 'react-native';
+import { Platform, StyleSheet, Text, View, Image, TouchableHighlight, ImageBackground, Slider, Button, navigate, Alert, FlatList, ActivityIndicator } from 'react-native';
 import { TextInput } from 'react-native-gesture-handler';
 import { StackActions, NavigationActions } from "react-navigation";
 import { db } from './Menu';
@@ -11,7 +11,9 @@ const Item = ({ date, weight }) => (
     </View>
 )
 
+
 class LogoTitle extends React.Component {
+
     render() {
         return (
             <View style={{ flexDirection: "row" }} >

@@ -159,6 +159,7 @@ export default class App extends Component {
                     })
                 }
             }
+        SaveWeight(getToday(), this.state.Weight)
 
     }
 
